@@ -812,3 +812,14 @@ a { color: var(--accent-color); }
     transform: none;
   }
 }
+
+/* ---------- Переключение CTA: скрываем дубли на мобильных ---------- */
+@media (max-width: 47.9375rem) {
+  .btn--header { display: none; }
+  .sticky-bottom-bar { display: block; }
+}
+
+@media (min-width: 48rem) {
+  .btn--header { display: inline-flex; }
+  .sticky-bottom-bar { display: none; }
+}
